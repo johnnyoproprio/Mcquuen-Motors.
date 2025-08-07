@@ -1,0 +1,162 @@
+#Cabeçario {
+    background: linear-gradient(90deg, #232a34 60%, #2d3642 100%);
+    color: #f2ff00;
+    padding: 10px 0 16px 0;
+    /* padding reduzido */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 2px 12px #0005;
+    border-radius: 0 0 18px 18px;
+
+}
+
+.destaque {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 100px;
+    font-size: 27px;
+
+}
+
+.search {
+    display: flex;
+    max-width: 500px;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 75px;
+
+}
+
+
+img {
+    width: 6%;
+    height: auto;
+    margin-right: 100px;
+    position: relative;
+    margin-right: 85%
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #f2ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.conforto {
+    text-align: left;
+    color: #f2ff00;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    font-size: 16px;
+}
+
+.conforto2 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    color: #f2ff00;
+    align-items: center;
+}
+
+.conforto3 {
+    text-align: center;
+    color: #f2ff00;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    margin-top: -255px;
+
+}
+
+.conforto4 {
+    font-size: 18px;
+    line-height: 1.6;
+
+
+}
+
+.conforto5 {
+    text-align: right;
+    color: #f2ff00;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    margin-top: -227px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagem2 {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.imagem3 {
+    width: 30%;
+}
+
+.menu-hamburguer {
+    margin-top: -55%;
+    z-index: 10;
+    size: 2;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    width: 34px;
+    cursor: pointer;
+    margin: 20px;
+    transition: filter 0.2s;
+}
+
+.menu-icon span {
+    height: 5px;
+    width: 100%;
+    background: #cacdd2;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.menu-icon:hover {
+    filter: brightness(1.3) drop-shadow(0 0 6px #ffd70088);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #0002;
+    padding: 15px 30px;
+    min-width: 180px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 12px 0;
+}
+
+.menu a {
+    color: #232a34;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+#menu-toggle:checked+.menu-icon+.menu {
+    display: flex;
+}
