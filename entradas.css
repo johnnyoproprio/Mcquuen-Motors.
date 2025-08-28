@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background: #f9f6f1;
+    color: #232a34;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.cardapio-section {
+    margin-bottom: 40px;
+}
+
+.cardapio-section h2 {
+    color: #8d6748;
+    border-left: 6px solid #ff1100;
+    padding-left: 12px;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+.itens {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    background: #fffbe7;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #0001;
+    padding: 18px 16px 14px 16px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.2s, box-shadow 0.2s, max-height 0.3s;
+    position: relative;
+    overflow: hidden;
+    max-height: 270px;
+}
+
+.item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px #8d674855;
+    max-height: 420px;
+}
+
+.item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 6px #0002;
+}
+
+.item h3 {
+    margin: 10px 0 6px 0;
+    font-size: 1.1rem;
+    color: #8d6748;
+}
+
+.preco {
+    display: block;
+    font-weight: bold;
+    color: #c9a97c;
+    font-size: 1.1rem;
+    margin-top: 4px;
+}
+
+.info-extra {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    font-size: 0.95rem;
+    color: #8d6748;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+}
+
+.item:hover .info-extra {
+    opacity: 1;
+    max-height: 80px;
+}
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0 0 0;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+}
+
+.item:hover .controle-quantidade {
+    opacity: 1;
+    max-height: 40px;
+}
+
+.btn-menos, .btn-mais {
+    background: #8d6748;
+    color: #fffbe7;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-menos:hover, .btn-mais:hover {
+    background: #ff1100;
+}
+
+.quantidade {
+    font-size: 1.1rem;
+    min-width: 18px;
+    display: inline-block;
+}
+
+.btn-add-carrinho {
+    background: #8d6748;
+    color: #fffbe7;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s, background 0.2s;
+    box-shadow: 0 2px 8px #0002;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item:hover .btn-add-carrinho {
+    opacity: 1;
+    max-height: 40px;
+}
+
+.btn-add-carrinho:hover {
+    background: #ff1100;
+}
+
+.btn-carrinho {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: filter 0.2s;
+    margin: 0;
+}
+.btn-carrinho:hover .icon-carrinho {
+    filter: drop-shadow(0 0 6px #ff110088) brightness(1.2);
+}
+
+.icon-carrinho {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.carrinho-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff1100;
+    color: #fff;
+    font-size: 0.95rem;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0003;
+    z-index: 2;
+}
+
+.btn-voltar {
+    background: #8d6748;
+    color: #fffbe7;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    cursor: pointer;
+    margin: 24px 0 16px 0;
+    box-shadow: 0 2px 8px #0002;
+    transition: background 0.2s, transform 0.2s;
+    display: block;
+}
+
+.btn-voltar:hover {
+    background: #ff1100;
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 800px) {
+    .itens {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        width: 90%;
+        max-width: 350px;
+    }

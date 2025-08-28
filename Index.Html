@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mcqueen Motors</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/jpg" href="./img/images.jpg" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="img/logo.jpg">
 </head>
 <body>
-
-  <div id="Cabeçario">
-    <div class="search">
-      <input type="text" placeholder="Pesquise aqui..." id="search" />
-      <button type="submit">🔍</button>
+  <header>
+    <div class="top-bar">
+      
+      <nav class="menu-hamburguer">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="#">Conselho de Compra</a></li>
+          <li><a href="#">Modelos Experiência</a></li>
+          <li><a href="faleconos.html">Fale Conosco</a></li>
+        </ul>
+      </nav>
+      
+      <div class="search-centralizada">
+        <form class="search" autocomplete="off">
+          <input type="text" placeholder="Pesquise aqui..." id="search">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+      <div class="logo">
+        <img src="img/logo-removebg-preview.png" alt="Mcqueen Motors" />
+      </div>
     </div>
     <h1>Mcqueen Motors</h1>
-    <img src="./img/images.jpg" alt="logo da empresa" />
-  </div>
+    <p class="slogan">Sua nova experiência sobre rodas</p>
+  </header>
 
-  <p class="destaque">
-    <span style="color: rgb(238, 255, 0);">O que procura?</span>
-  </p>
+  <main>
+    <section class="destaque">
+      <h2>Destaques do ano</h2>
+      <div class="galeria">
+        <div class="carro-card">
+          <img src="img/VERSA-2021_9.jpg" alt="Carro 1">
+          <div class="descricao-carro">
+            Nissan Versa 2021: Sedan moderno, econômico e espaçoso. Ideal para família e viagens urbanas.
+          </div>
+        </div>
+        <div class="carro-card">
+          <img src="img/vw-gol-1983-amarelo-manga.jpg" alt="Carro 2">
+          <div class="descricao-carro">
+            VW Gol 1983 Amarelo Manga: Clássico nacional, robusto e marcante. Perfeito para colecionadores e amantes de carros antigos.
+          </div>
+        </div>
+        <div class="carro-card">
+          <img src="img/caravan.jpg" alt="Carro 3">
+          <div class="descricao-carro">
+            Chevrolet Caravan: Station wagon espaçosa, motor potente e muito conforto. Ótima para viagens e aventuras.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sobre">
+      <h2>Sobre a Mcqueen Motors</h2>
+      <p>
+        A Mcqueen Motors oferece os melhores veículos do mercado, com conforto, tecnologia e segurança. Venha conhecer nossos modelos e faça um test drive!
+      </p>
+    </section>
+  </main>
 
-  <div class="conforto">
-    <ul>
-      <li>Modelo: Vellum</li>
-    </ul>
-    <p class="conforto2">
-      Conforto e estabilidade em cada curva.<br />
-      Um carro feito para quem busca suavidade,<br />
-      segurança e elegância ao dirigir.
-    </p>
-    <a href="https://carros.ig.com.br/2022-07-21/honda-lanca-novo-civic-type-r--que-vira-ao-brasil-no-ano-que-vem.html">imagem</a>
-  </div>
-
-  <div class="conforto3">
-    <ul>
-      <li>Modelo: Sentinel</li>
-    </ul>
-    <p class="conforto4">
-      Tecnologia avançada, segurança total.<br />
-      O carro que protege,<br />
-      conecta e impressiona.
-    </p>
-    <a href="https://carros.ig.com.br/2022-07-21/honda-lanca-novo-civic-type-r--que-vira-ao-brasil-no-ano-que-vem.html">imagem</a>
-  </div>
-
-  <div class="conforto5">
-    <ul>
-      <li>Modelo: Raptor</li>
-    </ul>
-    <p class="conforto6">
-      Potência e velocidade em sua forma mais pura.<br />
-      Feito para quem acelera com alma
-      quem não tem medo de morrer kkkkk <br>
+  <footer>
+    <p>&copy; 2025 Mcqueen Motors - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
